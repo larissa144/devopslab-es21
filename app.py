@@ -9,14 +9,5 @@ csrf = CSRFProtect(app)
 def pagina_inicial():
     return "Oiii, meu nome é larissa, tenho 21 anos e sou dev front-end!"
 
-@app.route('/bug')                                                                                                                                
-def bad():                                                                                                                                        
-    try:                                                                                                                                          
-        raise TypeError()                                                                                                                         
-    except TypeError as e:                                                                                                                        
-        print(e)                                                                                                                                  
-    except TypeError as e:                                                                                                                        
-        print("Duplicado, ou seja, nunca vai entrar aqui.")    
-
 if __name__ == '__main__':
     app.run()
